@@ -8,6 +8,6 @@ def digit_freq(a, b):
             D[char] += 1           # everytime we see a digit, increase the dictionary counter by one (keyed by digit)
     return D                       # return the completed dictionary 
 
-D = digit_freq(1, 500000)          # count digits for whatver range
+D = digit_freq(1, 500000)          # count digits for whatever range we need
 for d in sorted(D.items()):        # sort the results
     print(f'{d[0]}: {d[1]:,}')     # print the results
